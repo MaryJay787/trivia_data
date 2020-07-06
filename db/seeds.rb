@@ -7,6 +7,10 @@ Question.destroy_all
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# option_a:, 
+# option_b:, 
+# option_c:, 
+# option_d:)
 Category.create(title: 'Pillars of Islam')
 Category.create(title: 'Prophets')
 Category.create(title: 'Women in Islam')
@@ -63,3 +67,24 @@ option_b: 'Shahada',
 option_c: 'Making Pilgriming',
 option_d: 'Praying Five Times a Day')
 
+Question.create(category_id: Category.second.id, 
+answer: 'Prophet Muhammad (SAW)', 
+ask: 'Who has Allah mentioned in the Quran as the best example to follow:',
+option_a: 'Prophet Issah (AS)', 
+option_b: 'Prophet Yusuf (AS)', 
+option_c: 'Prophet Muhammad (SAW)', 
+option_d: 'Prophet Musa (AS)')
+Question.create(category_id: Category.second.id, 
+answer: 'Prophet Issah (AS)', 
+ask: 'Which prophet was born miraculously without the intervention of a man',
+option_a: 'Prophet Musa (AS)', 
+option_b: 'Prophet Issah (AS)', 
+option_c: 'Prophet Adam (AS)', 
+option_d: 'Prophet Yusuf (AS)')
+Question.create(category_id: Category.second.id, 
+answer: '25', 
+ask: 'How many prophets are mentioned in the Quran?',
+option_a: '25', 
+option_b: '23', 
+option_c: '33', 
+option_d: '13')
