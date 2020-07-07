@@ -7,10 +7,14 @@ Question.destroy_all
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# Question.create(category_id: Category.third.id, 
+# answer:,
+# ask:,
 # option_a:, 
 # option_b:, 
 # option_c:, 
 # option_d:)
+
 Category.create(title: 'Pillars of Islam')
 Category.create(title: 'Prophets')
 Category.create(title: 'Women in Islam')
@@ -88,6 +92,28 @@ option_a: '25',
 option_b: '23', 
 option_c: '33', 
 option_d: '13')
+
+Question.create(category_id: Category.third.id, 
+answer: 'Paradise lies beneath the feet of your mother',
+ask: 'What did the Prophet Muhammad (PBUH) mention about the status of a Mother?',
+option_a: 'Mothers come third in the line of who is important', 
+option_b: 'Paradise lies beneath the feet of your mother', 
+option_c: 'Paradise lies in the hands of your mother', 
+option_d: 'All the above')
+Question.create(category_id: Category.third.id, 
+answer: 'Whoever has three daughters and he accommodates them, show mercy toward them, and supports them, Paradise is definitely guaranteed for him',
+ask: 'What did the Prophet Muhammad (PBUH) mention about the raising of daughters?',
+option_a: 'Whoever has three daughters and he accommodates them, show mercy toward them, and supports them, Paradise is definitely guaranteed for him', 
+option_b: 'Whoever has ten daughters and he doesnt accommodate them, show mercy toward them, and supports them, Paradise is definitely guaranteed for him.', 
+option_c: 'Whoever has one daughters and he sometimes accommodates them, show mercy toward them, and supports them, Paradise is definitely guaranteed for him.', 
+option_d: 'Whoever has six daughters and he rarely accommodates them, show mercy toward them, and supports them, Paradise is definitely guaranteed for him')
+Question.create(category_id: Category.third.id, 
+answer: 'Women be treated with respect, honour and justice. It condemns oppression of any kind',
+ask: 'How should women be treated in Islam?',
+option_a: 'Women be treated with respect, honour and justice. It condemns oppression of any kind', 
+option_b: 'Women are considered as bad omens and sinful', 
+option_c: 'Women should be treated as slaves', 
+option_d: 'None of the above')
 
 Question.create(category_id: Category.fourth.id, 
 answer: 'That which is Read or The Recitation', 
