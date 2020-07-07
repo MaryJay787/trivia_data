@@ -150,3 +150,25 @@ option_a: 'Two years and six months',
 option_b: 'Three years and three months', 
 option_c: 'One year and ten months', 
 option_d: 'The Quran was revealed all in one day')
+
+Question.create(category_id: Category.fifth.id, 
+answer: 'Ahadith',
+ask: 'What is the plural of hadith?',
+option_a: 'Hadith', 
+option_b: 'Ahadith', 
+option_c: 'Lots of Hadiths', 
+option_d: 'Hadiths')
+Question.create(category_id: Category.fifth.id, 
+answer: 'Later Generations',
+ask: 'Ahadith were collected on paper by?',
+option_a: 'Later Generations', 
+option_b: 'Prophets', 
+option_c: 'Angels', 
+option_d: 'Allah')
+Question.create(category_id: Category.fifth.id, 
+answer: 'Traditions of Prophet Muhammad (SAW)',
+ask: 'Ahadith are?',
+option_a: 'Stories of the Prophets', 
+option_b: 'Stories from the Quran', 
+option_c: 'Traditions of Prophet Muhammad (SAW)', 
+option_d: 'All the above')
